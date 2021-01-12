@@ -87,15 +87,41 @@ const companies = [
   // if the argument is an array it should add it's values to the array that
   // will be returned by the function
 
-  
+  console.log("-----------------")
+  let argArray ;
+  let anyArg = (...arguments) => (typeof arguments == "object") ? `${argArray = arguments[0]}`:`${argArray = [...arguments]}`;
+
+     
+  anyArg([6,9,5])
+  console.log(argArray)
+
 
 
   // Exercise 10:index.js distructure the property street in a variable named
   // street from the object person
 
+  const {street} = person.address;
+  
+
   // Exercise 11: In index.js write a function that everytime you call it, it
   // returns a number that increments starting from 0
+   
+  let count = 0;
+  function increment() {
+    count++
+  }
+ 
 
   // Exercise 12: In index.js create a function that distructures the query
   // parameters of a url and adds them in an object as key value pairs and
   // then returns the object
+
+  const url = 'www.google.com/search?q=url&oq=url&aqs=chrome..69i57j0l4j69i60l3.1207j0j7&sourceid=chrome&ie=UTF-8' ;
+  const query = url.split("?")[1].split("&");
+  const person1 = {};
+  
+  query.forEach( (property) =>{
+    let prop = property.split("=");
+    person1[prop[0]] = prop[1]});
+    
+   console.log(person1 );
