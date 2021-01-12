@@ -87,7 +87,6 @@ const companies = [
   // if the argument is an array it should add it's values to the array that
   // will be returned by the function
 
-  console.log("-----------------")
   let argArray ;
   let anyArg = (...arguments) => (typeof arguments == "object") ? `${argArray = arguments[0]}`:`${argArray = [...arguments]}`;
 
