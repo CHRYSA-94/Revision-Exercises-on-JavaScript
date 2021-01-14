@@ -125,3 +125,7 @@ const companies = [
     person1[prop[0]] = prop[1]});
     
    console.log(person1 );
+
+
+
+

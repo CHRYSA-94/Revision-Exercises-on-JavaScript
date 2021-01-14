@@ -77,4 +77,15 @@
     // nested JSON object, based on the given key
       
       const targetValue = ( obj , key) => { obj.key}
+
+      //peripou i lisi einai afti
+
+      // const targetValue = (jsonObj, key) => {
+      //    const obj = JSON.parse(jsonObj);
+      //    for (let val of Object.values(obj)) {
+      //      if (typeof val === "object" && val !== null) {
+      //        return key in val ? val[key] : "No match";
+      //      }
+      //    }
+      //  };
          
