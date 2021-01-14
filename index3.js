@@ -28,11 +28,22 @@ const textExist = function(text, char) {
     }
 }
 
+
 textExist("helloo", "ll")
 
 // Exercise 5: Write a function that implements recursion
 
+  const recursion = function recursion(num) {
+      
+      if (num >= 1000) {
+          return  console.log ( "end of recursion") ;
+      }
+      console.log ("square numbers", num)
+     
+      return recursion(num * num) ;
+  }
 
+  recursion(2)
 
 // Exercise 6: Write a constructor Person that takes in the gender, name, age and set it's prototype 
 // of which the instances inherit a property of legs 2 and hands 2.
