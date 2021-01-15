@@ -12,7 +12,10 @@
 // Exercise 3: Add a click event listener in the 3rd li of the 1st ol and that changes the 
 // color to red and stop the event Propagation? 
 
-  ex1.addEventListener('click', function redText() { ex1.style.color = "red";} )
+  ex1.addEventListener('click', function redText(e) {
+     ex1.style.color = "red";
+     e.stopPropagation();
+} )
 
 // Exercise 4: Write a program that checks if a word has a specific text in it.
 // If it starts with it then it should return it starts with, if it has it in 
