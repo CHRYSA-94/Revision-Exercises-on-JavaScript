@@ -7,7 +7,8 @@
 // Exercise 2: Declare a variable lists and assing it the all the li
 // element with class="bullets" of the second ol element;
 
-  const ex2 = document.querySelectorAll('ol.bullets li.bullets')
+  const ex2 = document.querySelectorAll('ol.bullets li.bullets') 
+  console.log( Array.from(ex2))
 
 // Exercise 3: Add a click event listener in the 3rd li of the 1st ol and that changes the 
 // color to red and stop the event Propagation? 
