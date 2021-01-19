@@ -52,7 +52,7 @@
     console.log(num1);
 
     const num2Arr = str2.split(" ").filter( part => !isNaN(part)).map( finalNum => parseFloat(finalNum));
-    const num2 = num2Arr[0]
+    const num2 = parseInt(num2Arr);
     console.log(num2)
 
 // Exercise 4: Clone this object const obj = { name: 'Costas', address: {
