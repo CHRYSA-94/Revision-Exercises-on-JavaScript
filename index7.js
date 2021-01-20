@@ -53,7 +53,5 @@
 
 
 
-    //, {title:"This is another new post", body:"Body of the second new post"}
-    //{title:`${tit}`, body:`${bod}`}
 
     
