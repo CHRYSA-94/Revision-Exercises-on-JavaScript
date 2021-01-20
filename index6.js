@@ -44,10 +44,10 @@
 
 const isPositive = function(arg1, arg2) {
     switch(true){
-        case (arg1 > 0 && arg2) > 0:
+        case (arg1 > 0 && arg2 > 0) :
             return console.log(" they are both positive") ;
         break;
-        case (arg1 < 0 && arg2) < 0:
+        case (arg1 < 0 && arg2 < 0):
             return console.log(" they are both negative") ;
         break;
         default:
@@ -56,4 +56,4 @@ const isPositive = function(arg1, arg2) {
     }
 }
 
-isPositive( -5 ,2);
+isPositive( -5 ,-2);
